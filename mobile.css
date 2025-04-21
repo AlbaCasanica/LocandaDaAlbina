@@ -1,0 +1,76 @@
+/* Menu Mobile */
+@media (max-width: 768px) {
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #003366;
+        padding: 20px;
+        position: relative;
+        z-index: 1000;
+    }
+
+    nav img.logo {
+        width: 100px; /* Puoi ridurre il logo per adattarlo meglio alla versione mobile */
+        z-index: 1001;
+        margin-left: 0;
+    }
+
+    nav ul {
+        display: none; 
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        background-color: #003366;
+        max-height: 90vh;
+        overflow-y: auto; 
+        text-align: center;
+    }
+
+    nav ul.show {
+        display: flex;
+      }
+      
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 18px; /* Più leggibile su mobile */
+        padding: 10px 0;
+        display: block;
+        color: white;
+        text-decoration: none;
+        margin-left: 0;
+      }
+    
+    nav ul li a:hover,
+    nav ul li a:active{
+        background-color: transparent;
+        color: white;
+    }
+
+    .menu-toggle {
+        display: block; /* Mostra il bottone hamburger su mobile */
+        font-size: 30px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    nav ul.show {
+        display: block; /* Mostra il menu quando è aperto */
+        max-height: 500px;
+    }
+
+
+}
+

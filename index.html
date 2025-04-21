@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>@import url('https://fonts.cdnfonts.com/css/nickainley');</style>
+    <style>@import url('https://fonts.cdnfonts.com/css/high-cruiser');</style>
+    <link rel="StyleSheet" href="stile.css"/>
+    <link rel="StyleSheet" href="mobile.css" media="(max-width: 768px)"/>
+    <script src="script.js"></script>
+    <title>Airbnb Alba</title>
+  </head>
+  <body>
+    
+    <!-- Barra di Navigazione -->
+    <nav> 
+      <img src="logo.png" alt="Logo" class="logo">
+      
+      <!-- Hamburger icon -->
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button> 
+
+      <!-- Menu Computer -->
+      <ul id="menu">
+          <li><a href="#prenota">PRENOTA ORA</a></li>
+          <li><a href="#appartamenti">APPARTAMENTI </a></li>
+          <li><a href="#doveSiamo">DOVE SIAMO</a></li>
+          <li><a href="#comeRaggiungerci">COME RAGGIUNGERCI</a></li>
+       </ul>
+       
+    </nav>
+
+    <!-- Sezione Hero -->
+    <section class="hero-section">
+        <div clss="hero-content">
+          <h2 class="hero-title1">Locanda da</h2>
+          <h1 class="hero-title2">ALBINA</h1>
+          <a href="#prenota" class="hero-button">PRENOTA ORA!</a>
+        </div>
+    </section>
+
+
+    <!-- Sezione Prenota -->
+
+    <!-- Sezione Appartamenti-->
+    <section class="appartamenti-generale" id="appartamenti">
+      <h1 class="appartamenti-title">Gli Appartamenti</h1>
+      <p class="appartamenti-text">
+          I nostri appartamenti, <strong>moderni e sofisticati</strong>, sono pensati per offrire il massimo del comfort e della funzionalità. Ogni unità è caratterizzata da un design elegante e un'attenzione ai dettagli, con spazi ampi e luminosi, una cucina completamente attrezzata e un giardino privato dove goderti momenti di relax.
+          L’ambiente unisce perfettamente <strong>stile contemporaneo</strong> e calore accogliente, garantendo una permanenza piacevole. La posizione strategica ti permetterà di raggiungere facilmente le meraviglie di <strong>Venezia</strong>, dalle sue piazze storiche ai canali suggestivi, rendendo ogni soggiorno un'esperienza unica.
+      </p>
+
+      <div class="appartamenti-grid">
+        <div class="appartamento">
+          <a href="appartamentoVerde.html">
+            <img src="Verde.webp" alt="Appartamento Verde">
+            <div class="overlay">
+              <h3>Appartamento Verde</h3>
+            </div>
+          </a>
+        </div>
+        <div class="appartamento">
+          <a href="appartamentoRosa.html">
+            <img src="Rosa.webp" alt="AppartamentoRosa">
+            <div class="overlay">
+              <h3>Appartamento Rosa</h3>
+            </div>
+          </a>
+        </div>
+        <div class="appartamento">
+          <a href="appartamentoBlu.html">
+            <img src="Blu.jpg" alt="Appartamento Blu">
+            <div class="overlay">
+              <h3>Appartamento Blu</h3>
+            </div>
+          </a>
+        </div>
+        <div class="appartamento">
+          <a href="appartamentoGrigio.html">
+            <img src="Grigio.avif" alt="Appartamento Grigio">
+            <div class="overlay">
+              <h3>Appartamento Grigio</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Sezione Dove Siamo -->
+    <section class="doveSiamo" id="doveSiamo">
+      <h1 class="doveSiamo-title">Dove Siamo</h1>
+      <div class="container">
+        <div class="testo">
+          <p>
+            Situato a Spinea, a pochi passi dalla stazione ferroviaria, questo appartamento è la base ideale per esplorare Venezia, Padova, Treviso, Vicenza e Verona. Con collegamenti rapidi e diretti, potrai facilmente raggiungere tutte le principali città venete, godendo al contempo della tranquillità di una località residenziale. Una scelta perfetta per chi cerca comodità e accessibilità.
+          </p>
+        </div>
+        <div class="mappa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d526.276949718659!2d12.170514876301425!3d45.48941544048036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb5f85a88f20b%3A0xf73936247f9323e3!2sVia%20Giuseppe%20Parini%2C%204A%2C%2030038%20Spinea%20VE!5e0!3m2!1sit!2sit!4v1744909365888!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione Come Raggiungerci -->
+    <section class="comeRaggiungerci" id="comeRaggiungerci">
+      <h1 class="comeRaggiungerci-titolo">Come Raggiungerci</h1>
+     
+      <div class="riga">
+        <div class="circle" style="background-image: url('Verde.webp');">
+          <span class="circle-text">Aeroporto Marco Polo</span>
+        </div>
+        <div class="descrizione">
+          <p>Situato a circa 20 minuti di auto, è il principale aeroporto della zona, con collegamenti internazionali e nazionali.</p>
+        </div>
+      </div>
+    
+      <div class="riga">
+        <div class="circle" style="background-image: url('Rosa.webp');">
+          <span class="circle-text">Aeroporto di Treviso</span>
+        </div>
+        <div class="descrizione">
+          <p>A circa 30 minuti, ideale per i voli low cost. Collegato con bus navetta e taxi direttamente a Spinea e Venezia.</p>
+        </div>
+      </div>
+    
+      <div class="riga">
+        <div class="circle" style="background-image: url('Grigio.avif');">
+          <span class="circle-text">Stazione di Mestre</span>
+        </div>
+        <div class="descrizione">
+          <p>A soli 10 minuti di treno o auto, punto strategico per raggiungere facilmente qualsiasi città del Veneto.</p>
+        </div>
+      </div>
+    </section>
+    
+     <!-- Sezione Footer -->
+     <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-info">
+          <h3>AG Apartments</h3>
+          <p>Email: chinellato.airbnb@gmail.com</p>
+          <p>Telefono: +39 335 6137438</p>
+        </div>
+        <div class="footer-links">
+          <a href="#appartamenti">Appartamenti</a>
+          <a href="#doveSiamo">Dove Siamo</a>
+          <a href="#comeRaggiungerci">Come Raggiungerci</a>
+        </div>
+        <div class="footer-social">
+          <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+          <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+      </div>
+      <div class="footer-copy">
+        &copy; 2025 AG Apartments. Tutti i diritti riservati.
+      </div>
+    </footer>
+    
+    <!-- BOTTONE freccia -->
+    <a href="#top" class="scrollTop" id="scrollToTop" title="Torna su">⬆</a>
+    
+  </body>
+</html>
