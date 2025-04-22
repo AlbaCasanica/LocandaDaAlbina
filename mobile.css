@@ -1,6 +1,7 @@
 /* Menu Mobile */
 @media (max-width: 768px) {
 
+    /* -------- INIZIO Stile della barra di navigazione ------------*/
     nav {
         display: flex;
         justify-content: space-between;
@@ -64,12 +65,52 @@
         color: white;
         cursor: pointer;
         z-index: 1001;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .menu-toggle.rotate {
+        transform: rotate(90deg);
+        opacity: 0.8;
     }
 
     nav ul.show {
         display: block; /* Mostra il menu quando è aperto */
         max-height: 500px;
     }
+
+    /* -------- FINE Stile della barra di navigazione ------------*/
+
+    /* -------- INIZIO Stile della Hero section ------------*/
+
+    .hero-button:focus,
+    .hero-button:active {
+        background-color: #003366;
+        color: white;
+        outline: none;
+    }
+
+    /* -------- FINE Stile della Hero section ------------*/
+
+
+    /* -------- INIZIO Bottone Fisso in Basso DX ------------*/
+    .desktop-text {
+        display: none;
+      }
+      .mobile-text {
+        display: inline;
+      }
+      
+      .scrollTop {
+        font-size: 20px;
+        padding: 10px 15px;
+        border-radius: 50%;
+        background-color: #003366;
+        color: white;
+      }
+    /* -------- FINE Bottone Fisso in Basso DX ------------*/
+
+
+
 
 
 }

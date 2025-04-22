@@ -1,34 +1,44 @@
 
-/*BOTTONE freccia*/
+/* -----INIZIO Bottone Fisso in Basso DX----- */
+
 document.addEventListener("DOMContentLoaded", () => {
-    const scrollBtn = document.getElementById("scrollToTop");
+    const scrollBtn = document.getElementById("scrollToAction");
+    const prenotaSection = document.querySelector("#prenota");
 
     window.addEventListener("scroll", () => {
-        // Se l'utente ha scrollato più di 300px, fai apparire il bottone
-        if (window.scrollY > 300) {
-            scrollBtn.classList.add("show");
-        } else {
-            // Altrimenti, nascondilo
-            scrollBtn.classList.remove("show");
+        if (prenotaSection) {
+            const triggerPoint = prenotaSection.offsetTop + prenotaSection.offsetHeight;
+            if (window.scrollY > triggerPoint) {
+                scrollBtn.classList.add("show");
+            } else {
+                scrollBtn.classList.remove("show");
+            }
         }
     });
 
     // Quando l'utente clicca sul bottone, scorre verso l'alto
     scrollBtn.addEventListener("click", (event) => {
         event.preventDefault();
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth' // Scorrimento morbido
-        });
+        const target = document.querySelector("#prenota");
+        if (target) {
+            window.scrollTo({
+                top: target.offsetTop,
+                behavior: 'smooth'
+            });
+        }  
     });
 
-/* Apertura e Chiusura HAMBURGER */
+/* -----FINE Bottone Fisso in Basso DX----- */
+
+/* -----INIZIO Apertura e Chiusura HAMBURGER -----*/
+
 const menuToggle = document.getElementById("menu-toggle");
 const menu = document.getElementById("menu");
 
 // Funzione per aprire/chiudere il menu
 menuToggle.addEventListener("click", () => {
 menu.classList.toggle("show"); // Aggiungi o rimuovi la classe "show"
+menuToggle.classList.toggle("rotate");
 
 // Cambia l'icona in base allo stato del menu
 if (menu.classList.contains("show")) {
@@ -38,6 +48,7 @@ if (menu.classList.contains("show")) {
 }
 });
 
+/* -----FINE Apertura e Chiusura HAMBURGER ----- */
 
 
 
