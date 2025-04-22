@@ -139,7 +139,7 @@ nav img.logo {
     font-family: 'Lato', sans-serif;
   }
 
-  @media (min-width: 769px) {
+  @media (hover: hover) and (pointer: fine) {
     .hero-button:hover {
       background-color: #fcbe27;
       color: #003366;
