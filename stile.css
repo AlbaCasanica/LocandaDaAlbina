@@ -88,6 +88,12 @@ nav img.logo {
     text-align: center;
   }
 
+  @media (min-width: 769px) {
+    .hero-section {
+      background-attachment: fixed;
+    }
+  }
+  
   .hero-content {
     align-items: center;
   }
