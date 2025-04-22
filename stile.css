@@ -144,6 +144,13 @@ nav img.logo {
       color: #003366;
   }
 
+  @media (min-width: 769px) {
+    .hero-button:hover {
+      background-color: #fcbe27;
+      color: #003366;
+    }
+  }
+  
   /* -------- FINE Stile Hero ------------*/
   
   /* -------- INIZIO Stile Prenota Ora ------------*/
@@ -466,4 +473,4 @@ nav img.logo {
 }
 
 /* -------- FINE Bottone Fisso in Basso DX ------------*/
-  
+ 

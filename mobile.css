@@ -82,15 +82,23 @@
 
     /* -------- INIZIO Stile della Hero section ------------*/
 
-    .hero-button:focus,
-    .hero-button:active {
-        background-color: #003366 !important;
-        color: white !important;
-        transform: scale(0.97);
-        transition: transform 0.1s ease, background-color 0.3s ease;
-        outline: none;
+    .hero-button {
+        background-color: #003366;
+        color: white;
+        transition: transform 0.1s ease;
+        padding: 12px 24px;
+        border-radius: 5px;
+        font-size: 18px;
+        font-family: 'Lato', sans-serif;
+        text-decoration: none;
+        display: inline-block;
     }
-
+    
+    .hero-button:active {
+        transform: scale(0.97);
+        outline: none;
+      }
+      
     /* -------- FINE Stile della Hero section ------------*/
 
 
