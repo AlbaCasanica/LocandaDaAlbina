@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+/* Font per titolo "Locanda da" Nickainley*/
+@font-face {
+  font-family: 'Nickainley';
+  src: url('nickainley.otf') format('opentype');
+}
+
 /* -------- INIZIO Stile della barra di navigazione ------------*/
 nav {
     height: 100px;
@@ -78,6 +84,7 @@ nav img.logo {
     background-image: url("Chinellato0098.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     background-attachment: scroll;
     height: 75vh;
     position: relative;
@@ -100,7 +107,7 @@ nav img.logo {
 
   /*titolo ""Locanda da*/
   .hero-title1 {
-    font-family: 'Nickainley';                                        
+    font-family: 'Nickainley', cursive;                                        
     font-size: 3rem;
     font-weight: bold;
     color: #fcbe27;

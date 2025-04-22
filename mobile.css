@@ -84,8 +84,8 @@
 
     .hero-button:focus,
     .hero-button:active {
-        background-color: #003366;
-        color: white;
+        background-color: #003366 !important;
+        color: white !important;
         outline: none;
     }
 
